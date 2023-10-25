@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @media print {
+      body {
+        width: 21cm;
+        height: 29.7cm;
+        /* change the margins as you want them to be. */
+      }
+
+      
+    }
+
+
+
+    body {
+      width: 21cm;
+      height: 29.7cm;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      /* change the margins as you want them to be. */
+    }
+
+    .w100 {
+      width: 100%;
+    }
+
+    .tdk {
+      text-align: left;
+      padding: 0.5rem 0.5rem;
+      width: 80px;
+
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    .category {
+      color: #ff0000;
+      font-weight: 600;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.1rem 0.5rem;
+    }
+
+    table tr th {
+      border-bottom: 1px solid black;
+      padding: 0px 0.5rem;
+    }
+
+
+
+    table tr td {
+      width: 60px;
+      height: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: 600;
+      font-size: larger;
+    }
+
+    .info div div:nth-child(2n + 1) {
+      float: right;
+    }
+  </style>
+  <style type="text/css" media="print">
+    @page {
+      size: A4 portrait;
+      padding-left: 8px;
+      padding-right: 0px;
+      margin-top: 50px;
+      margin-bottom: 150px;
+
+      @bottom-center {
+        width: 100%;
+        content: element(footer)
+      }
+    }
+
+    @media print {
+      .footer {
+        left: 0;
+        width: 100%;
+        position: running(footer);
+        height: 200px;
+      }
+    }
+
+    thead {
+      display: table-header-group;
+    }
+
+    /*
+            tekrar etmesini istersen
+            tfoot
+            {
+                display: table-footer-group;
+            }
+        */
+    tfoot {
+      display: table-row-group;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="customers">
+    <thead>
+      <tr>
+        <td colspan="10">
+          <img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\logo.png"
+            style="width: 850px;height: 150px;" />
+          <div>
+            <div class="title">Teklif Formu</div>
+            <div class="info">
+              <div>
+                <div><span>Tarih:</span> <b></b></div>
+                <div><span>Firma:</span> <span>BATİN</span></div>
+              </div>
+              <div>
+                <div><span>Teklif No:</span></div>
+                <div><span>Adres No:</span> <span></span></div>
+              </div>
+              <div>
+                <div><span>Vergi Dairesi:</span></div>
+                <div><span>İlgili:</span></div>
+              </div>
+              <div>
+                <div><span>Tel:</span>486468546</div>
+                <div><span>Vergi No:</span></div>
+              </div>
+
+            </div>
+      <tr style="border-bottom: 6px solid #dbdbdb;">
+        <th>Kod</th>
+        <th>Ürün</th>
+        <th style="width: 400px;">Aciklama</th>
+        <th>Miktar</th>
+        <th style="width: 45px;">Birim Fiyat</th>
+        <th style="width: 50px;">KDV Orani</th>
+        <th>Tutar</th>
+        <th></th>
+      </tr>
+      <tr>
+        </td>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr>
+        <td class="category" style="color:blue;page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">a</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          string fdgfdgfd dfgdfg dfgdfg fddfgdf
+        </td>
+        <td>10,000</td>
+        <td>9,000</td>
+        <td>10,000</td>
+        <td>99,000</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          asdas sdfsdfsdf sdfsdfsdf sdfsdfsdf sdfsdfsdf sdfsdfsdf sdfsdf sdfsdf
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK sdfsdf sdfsfsdfsd sdfsdfsdfsdf sdfsdfsdf sdfsdfsd fsdfsdfsdfsd sdfsdfsdf sdfsdfsdf sdfsdfsd
+        </td>
+        <td>1,000</td>
+        <td>4,950</td>
+        <td>0,000</td>
+        <td>4,950</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          string fdgfdgfd dfgdfg dfgdfg fddfgdf
+        </td>
+        <td>10,000</td>
+        <td>9,000</td>
+        <td>10,000</td>
+        <td>99,000</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          string fdgfdgfd dfgdfg dfgdfg fddfgdf
+        </td>
+        <td>10,000</td>
+        <td>9,000</td>
+        <td>10,000</td>
+        <td>99,000</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="tdk" style="color:blue">Total:303,130</td>
+
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td class="category" style="color:blue">b</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          asdas dfgfds dfgdfsg dsfg dsfsdfsdgfsd dfsgsdfgsd fdgsdgdf fdggf fgfg
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK dfgdfg fdgdf gfdsdf sdsfgd
+        </td>
+        <td>1,000</td>
+        <td>4,950</td>
+        <td>0,000</td>
+        <td>4,950</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          asdas dfgfds dfgdfsg dsfg dsfsdfsdgfsd dfsgsdfgsd fdgsdgdf fdggf fgfg
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK dfgdfg fdgdf gfdsdf sdsfgd
+        </td>
+        <td>1,000</td>
+        <td>4,950</td>
+        <td>0,000</td>
+        <td>4,950</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          asdas dfgfds dfgdfsg dsfg dsfsdfsdgfsd dfsgsdfgsd fdgsdgdf fdggf fgfg
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK dfgdfg fdgdf gfdsdf sdsfgd
+        </td>
+        <td>1,000</td>
+        <td>4,950</td>
+        <td>0,000</td>
+        <td>4,950</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="tdk" style="color:blue">Total:18,390</td>
+
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td class="category" style="color:blue">cc</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          test tes fdgfdgdfs dfgdsfg dfgdfgdsfg dfgdfgsdfg sdfgdfg dfgdfgsfd sdfgdsfg gdsfgdfg sdfgdsfg hfgh fgh fgh fgh
+          fgh fg fgh fghdfg
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="tdk" style="color:blue">Total:1,180</td>
+
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td class="category" style="color:blue">dd</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK
+        </td>
+        <td>1,000</td>
+        <td>198,000</td>
+        <td>0,000</td>
+        <td>198,000</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK
+        </td>
+        <td>1,000</td>
+        <td>198,000</td>
+        <td>0,000</td>
+        <td>198,000</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="tdk" style="color:blue">Total:396,000</td>
+
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td class="category" style="color:blue">ee</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          fdgsdfg sdfgdfsg dfgsd
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          çatal<br>
+          50*70*92<br>
+          fdgsdfg sdfgdfsg dfgsd
+        </td>
+        <td>1,000</td>
+        <td>1,000</td>
+        <td>18,000</td>
+        <td>1,180</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="tdk" style="color:blue">Total:2,360</td>
+
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td class="category" style="color:blue">y</td>
+      </tr>
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK dfgsdfg dsfg dfg sdfg dfgh fgh fghfghfghfgh fghfghfghfg hfghsfg
+        </td>
+        <td>1,000</td>
+        <td>99,000</td>
+        <td>0,000</td>
+        <td>99,000</td>
+      </tr>
+
+
+      <tr style="page-break-inside: avoid;border-bottom: 6px solid #dbdbdb;">
+        <td>A.01</td>
+        <td><img style="width: 65px;height:65px"
+            src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg"
+            alt="Patates Soyma Makinesi" /></td>
+        <td>
+          TEST STOK<br>
+          50*70*92<br>
+          TEST STOK dfgsdfg dsfg dfg sdfg dfgh fgh fghfghfghfgh fghfghfghfg hfghsfg
+        </td>
+        <td>1,000</td>
+        <td>99,000</td>
+        <td>0,000</td>
+        <td>99,000</td>
+      </tr>
+
+      <tr style="page-break-after: always;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="tdk" style="color:blue">Total:198,000</td>
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td>
+        <td>
+        <td>
+          <div></div>
+          <div></div>
+          <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color:red">Toplam:890,800</td>
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <div></div>
+        <div></div>
+        <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color:red">KDV Tutarı:0,000</td>
+      </tr>
+      <tr style="page-break-inside: avoid;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <div></div>
+        <div></div>
+        <div></div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color:red">Genel Toplam:1766,000</td>
+      </tr>
+
+    </tbody>
+    <tfoot style="page-break-inside: avoid;">
+      <tr>
+        <td colspan="10">
+          <p style="margin-left: 20px;">
+            Nakliye, nakliye sigortası ve montaj KONYA şehir içi firmamıza aittir. Şehir dışı alıcıya aittir.
+          </p>
+          <p style="margin-left: 20px;">
+            Her türlü inşaat işleri (duvar, yer, dekorasyon, elektrik, su, doğalgaz, havalandırma tesisatları) alıcıya
+            aittir.
+          </p>
+          <p style="margin-left: 20px;">
+            Montaj esnasında taşıma için vinç ihtiyacı olduğu takdirde ALICI tarafından karşılanacaktır.
+          </p>
+          <p style="margin-left: 20px;">Fiyatlar 1 gün süre ile geçerlidir</p>
+          <p style="margin-left: 20px;">Teslim tarihi …/…/……</p>
+          <p style="margin-left: 20px;">Ürünlerin miktar değişikliklerinde karşılıklı mutabakat halinde proforma yeniden
+            güncellenir.</p>
+          <h2 style="text-align: center;">Onay</h2>
+          <table style="width: 100%;">
+            <tr>
+              <td style="float: left;margin-left: 68px;font-size: 25px;">Alıcı</td>
+              <td style="float: right;margin-right: 68px; font-size: 25px; ">Satıcı</td>
+            </tr>
+
+
+          </table>
+        </td>
+      </tr>
+    </tfoot>
+
+
+
+  </table>
+
+  <div class="footer">
+    <div style="width: 90%; margin: 0 auto; padding: 10px 0;">
+      <p style="text-align: center;">TMR ENDÜSTRİYEL MUTFAK ve HİJYEN EKİPMANLARI - TAMER ERVURAL / Mevlana Vd. 115
+        52702632</p>
+      <p style="text-align: center;">TMR ENDÜSTRİYEL MUTFAK ve HİJYEN EKİPMANLARI - TAMER ERVURAL / Mevlana Vd. 115
+        52702632</p>
+      <p style="text-align: center;">TMR ENDÜSTRİYEL MUTFAK ve HİJYEN EKİPMANLARI - TAMER ERVURAL / Mevlana Vd. 115
+        52702632</p>
+    </div>
+
+  </div>
+</body>
+
+</html>

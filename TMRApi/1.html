@@ -1,0 +1,376 @@
+﻿{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <style>
+        @media print {
+            body {
+                width: 21cm;
+                height: 29.7cm;
+                margin: 30mm 45mm 30mm 45mm;
+                /* change the margins as you want them to be. */
+            }
+        }
+        .a{
+            page-break-after:always;
+        }
+
+        body {
+            width: 21cm;
+            height: 29.7cm;
+            margin: 30mm 45mm 30mm 45mm;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            /* change the margins as you want them to be. */
+        }
+
+        .w100 {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        .category {
+            color: #ff0000;
+            font-weight: 600;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 0.5rem 0.5rem;
+        }
+
+        table tr th {
+            border-bottom: 1px solid black;
+            padding: 0px 0.5rem;
+        }
+
+        table tr td:not(.category) {
+            border-bottom: 6px solid #dbdbdb;
+        }
+
+        table tr td img {
+            width: 100px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 600;
+            font-size: larger;
+        }
+
+        .info div div:nth-child(2n + 1) {
+            float: left;
+        }
+
+        .info div div:nth-child(2n) {
+            float: right;
+        }
+
+        .info div::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\logo.png" alt="Logo" />
+
+        <div>
+            <div class="title">Teklif Formu</div>
+            <div class="info">
+                <div>
+                    <div><span>Firma:</span> <b>BATİN</b></div>
+                    <div><span>Mail:batin@sistemiq.com</span></div>
+                </div>
+                <div>
+                    <div><span>Adres:KTM busan</span></div>
+                    <div><span>Teklif Tarihi:</span> <span></span></div>
+                </div>
+                <div>
+                    <div><span>Gecerlilik Tarihi:</span></div>
+                    <div><span>Tel:</span> <span>486468546</span></div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <table class="w100">
+            <tr>
+                <th>Kod</th>
+                <th>Ürün</th>
+                <th>Açıklama</th>
+                <th>Miktar</th>
+                <th>Birim Fiyat</th>
+                <th>Tutar</th>
+                <th></th>
+            </tr>
+            <tr><td style="color:blue">aa</td></tr>
+
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                <td>
+                <td>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="color:blue">Total:99,0000000000</td>
+            </tr>
+            <tr><td style="color:blue">aaa</td></tr>
+
+            <tr style="break-after:page">
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                <td>
+                <td>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="color:blue">Total:99,0000000000</td>
+            </tr>
+            <tr><td style="color:blue">aaaa</td></tr>
+
+
+
+
+
+            <tr>
+                <td>qwewq</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>asdas</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>0,25840000</td>
+                <td>0,2584000000</td>
+                <td></td>
+            </tr>
+
+
+            <tr class=>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                <td>
+                <td>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="color:blue">Total:99,2584000000</td>
+            </tr>
+            <tr><td style="color:blue">ddd</td></tr>
+
+            <tr>
+                <td>TEST STOK</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\20200213_035136.jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>TEST STOK</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>99,00000000</td>
+                <td>99,0000000000</td>
+                <td></td>
+            </tr>
+
+
+            <tr class="a">
+                <td>qwewq</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>asdas</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>0,25840000</td>
+                <td>0,2584000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>qwewq</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>asdas</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>0,25840000</td>
+                <td>0,2584000000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>qwewq</td>
+                <td><img src="C:\Users\LOGITHINK TEKNOLOJİ\Source\Repos\sametyylck\TMRKitchen\TMRApi\wwwroot\pexels-egor-kamelev-8169649 - Kopya (2).jpg" /></td>
+                <td>
+                    <div>Patates Soyma Makinesi</div>
+                    <div>asdas</div>
+                    <div>10 kg/sefer, 380 V</div>
+                </td>
+                <td>1,00</td>
+                <td>0,25840000</td>
+                <td>0,2584000000</td>
+                <td></td>
+            </tr>
+
+
+
+
+        </table>
+</body>
+</html>
+
